@@ -109,14 +109,13 @@ if __name__ == '__main__':
     pres = np.array(pre_loger)
     ndcgs = np.array(ndcg_loger)
     hit = np.array(hit_loger)
-    print(rec_loger)
 
-#     best_rec_0 = max(recs[:, 0])
-#     idx = list(recs[:, 0]).index(best_rec_0)
+    best_rec_0 = max(recs[:, 0])
+    idx = list(recs[:, 0]).index(best_rec_0)
 
-#     final_perf = "Best Iter=[%d]@[%.1f]\trecall=[%s], precision=[%s], hit=[%s], ndcg=[%s]" % \
-#                  (idx, time() - t0, '\t'.join(['%.5f' % r for r in recs[idx]]),
-#                   '\t'.join(['%.5f' % r for r in pres[idx]]),
-#                   '\t'.join(['%.5f' % r for r in hit[idx]]),
-#                   '\t'.join(['%.5f' % r for r in ndcgs[idx]]))
-#     print(final_perf)
+    final_perf = "Best Iter=[%d]@[%.1f]\trecall=[%s], precision=[%s], hit=[%s], ndcg=[%s]" % \
+                 (idx, time() - t0, '\t'.join(['%.5f' % r for r in recs[idx]]),
+                  '\t'.join(['%.5f' % r for r in pres[idx]]),
+                  '\t'.join(['%.5f' % r for r in hit[idx]]),
+                  '\t'.join(['%.5f' % r for r in ndcgs[idx]]))
+    print(final_perf)
