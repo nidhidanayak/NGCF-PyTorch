@@ -109,9 +109,10 @@ if __name__ == '__main__':
     pres = np.array(pre_loger)
     ndcgs = np.array(ndcg_loger)
     hit = np.array(hit_loger)
+    print(recs)
 
-    best_rec_0 = max(recs)
-    idx = list(recs).index(best_rec_0)
+    #best_rec_0 = max(recs[:])
+    #idx = list(recs).index(best_rec_0)
 
     final_perf = "Best Iter=[%d]@[%.1f]\trecall=[%s], precision=[%s], hit=[%s], ndcg=[%s]" % \
                  (idx, time() - t0, '\t'.join(['%.5f' % r for r in recs[idx]]),
