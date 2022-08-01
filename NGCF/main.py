@@ -109,7 +109,7 @@ if __name__ == '__main__':
     pres = np.array(pre_loger)
     ndcgs = np.array(ndcg_loger)
     hit = np.array(hit_loger)
-    print(recs)
+    print(rec_loger)
 
 #     best_rec_0 = max(recs[:, 0])
 #     idx = list(recs[:, 0]).index(best_rec_0)
