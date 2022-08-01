@@ -102,7 +102,7 @@ if __name__ == '__main__':
         # *********************************************************
         # save the user & item embeddings for pretraining.
         if ret['recall'][0] == cur_best_pre_0 and args.save_flag == 1:
-            torch.save(model.state_dict(), args.weights_path + str(epoch) + '.pkl')
+            #torch.save(model.state_dict(), args.weights_path + str(epoch) + '.pkl')
             print('save the weights in path: ', args.weights_path + str(epoch) + '.pkl')
 
     recs = np.array(rec_loger)
